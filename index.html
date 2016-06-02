@@ -5,12 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel|Tangerine' rel='stylesheet' type='text/css'>
   </head>
 
   <style>
     .jumbotron {
       background-color: #66CCCC;
       color: white;
+      font-family: 'Tangerine', cursive;
       padding: 100px 25px;
     }
     .navbar {
@@ -22,9 +24,9 @@
       border-radius: 0;
       margin-bottom: 0;
       font-size: 12px;
+      font-family: 'Cinzel', serif;
       letter-spacing: 5px;
     }
-
     .navbar-nav li a:hover {
       color: #1abc9c !important;
     }
@@ -41,11 +43,11 @@
 
   </style>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <!--nav bar-->
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -57,9 +59,9 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">WORK</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
       </div>
@@ -69,13 +71,13 @@
 
     <div class="jumbotron text-center">
       <img src="images/space.jpg" class="img-circle" alt="space" width="275" height="275">
-      <h1>Site Under Construction</h1>
-      <p>Check back later!</p>
+      <h1>Kaitlyn Harris</h1>
+      <h3>Software Developer | Portland, OR</h3>
     </div>
 
     <!--skills section-->
 
-    <div class="page-header text-center">
+    <div id=skills class="page-header text-center">
       <h1>Skills</h1>
     </div>
 
@@ -111,7 +113,7 @@
 
     <!--links-->
 
-    <div class="container-fluid text-center">
+    <div id=portfolio class="container-fluid text-center">
       <br>
       <div class="row">
         <div class="col-sm-4">
@@ -130,6 +132,9 @@
           <a href="#" class="btn btn-info" role="button">send a message</a>
         </div>
       </div>
+    </div>
+
+    <div id=contact>
     </div>
 
     <!--footer-->
