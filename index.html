@@ -1,62 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>Kaitlyn Harris</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Cinzel|Tangerine' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Cinzel|Tangerine' type='text/css'>
+    <link rel="stylesheet" href="css/devicons.min.css">
+    <link rel="stylesheet" href="css/site.css">
   </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="150">
 
-  <style>
-    .jumbotron {
-      background-color: #66CCCC;
-      color: white;
-      font-family: 'Tangerine', cursive;
-      padding: 100px 25px;
-    }
-    .navbar {
-      background-color: #3D4C4C;
-      color: white;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      font-family: 'Cinzel', serif;
-      letter-spacing: 5px;
-    }
-    .navbar-nav li a:hover {
-      color: #1abc9c !important;
-    }
+<!-- jumbotron -->
 
-    .bg-1 {
-      background-color: #4C9999;
-      color: #ffffff;
-    }
+  <div class="jumbotron text-center">
+    <img src="images/space.jpg" class="img-circle" alt="space" width="275" height="275">
+    <h1>Kaitlyn Harris</h1>
+    <h2>Software Developer | Portland, OR</h2>
+  </div>
 
-    .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
+<!-- navbar -->
 
-  </style>
-
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-    <!--nav bar-->
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
+  <nav class="navbar navbar-default" data-spy="affix" data-offset-top="618">
+    <div class="container-fluid">
+      <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Kaitlyn Harris</a>
-        </div>
+        </button>
+        <a class="navbar-brand" href="#">Kaitlyn Harris</a>
+      </div>
+      <div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#skills">SKILLS</a></li>
@@ -65,89 +40,362 @@
           </ul>
         </div>
       </div>
-    </nav>
-
-    <!--jumbotron-->
-
-    <div class="jumbotron text-center">
-      <img src="images/space.jpg" class="img-circle" alt="space" width="275" height="275">
-      <h1>Kaitlyn Harris</h1>
-      <h3>Software Developer | Portland, OR</h3>
     </div>
+  </nav>
 
-    <!--skills section-->
+  <!-- skills section -->
 
-    <div id=skills class="page-header text-center">
-      <h1>Skills</h1>
+  <!-- http://vorillaz.github.io/devicons/#/dafont -->
+
+  <div id="skills" class="container-fluid text-center">
+
+    <div class="row">
+
+      <div class="col-sm-4">
+        <p class="devicons devicons-html5"></p>
+          <!-- Trigger button -->
+        <p><button type="button" class="btn btn-lg btn-default" data-toggle="modal" data-target="#webModal">Web Development</button></p>
+
+        <!-- Modal -->
+        <div id="webModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Web Development Skill Summary</h4>
+              </div>
+              <div class="modal-body">
+                <p>I have experience coding websites from the ground up with <strong>HTML5</strong> and
+                  <strong>CSS3</strong>, using <strong>JQuery</strong> to spice things up.  I've also
+                  used <strong>Wordpress</strong>, and more recently I've had a lot of fun learning
+                  <strong>Bootstrap</strong> for the purposes of creating this portfolio.  I have some
+                  experience using <strong>JavaScript</strong>, and I hope to expand my skills in this area.
+                  </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-4">
+        <p class="devicons devicons-database"></p>
+          <!-- Trigger button -->
+        <p><button type="button" class="btn btn-lg btn-default" data-toggle="modal" data-target="#dataModal">Database</button></p>
+
+        <!-- Modal -->
+        <div id="dataModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Database Skill Summary</h4>
+              </div>
+              <div class="modal-body">
+                <p>Something about writing <strong>SQL</strong> queries appeals to the part of my brain
+                that has always loved puzzles.  I've used both <strong>MySQL</strong> and
+                <strong>SQLite3</strong> with Python to create database-powered desktop apps.  I've written
+                scripts to populate and query databases in <strong>MSSQLServer</strong>.  In the Portfolio
+                section you'll find a script that generates a database for a fictional town library,
+                complete with several tables, sample data, and a stored procedure with several possible queries.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-4">
+        <p class="devicons devicons-python"></p>
+          <!-- Trigger button -->
+        <p><button type="button" class="btn btn-lg btn-default" data-toggle="modal" data-target="#pyModal">Python</button></p>
+
+        <!-- Modal -->
+        <div id="pyModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Python Skill Summary</h4>
+              </div>
+              <div class="modal-body">
+                <p>Who doesn't like <strong>Python</strong>?  So easy to learn, so many libraries.  I'm comfortable
+                with <strong>Python2</strong> and <strong>Python3</strong> and have used both <strong>TKinter</strong>
+                and <strong>wxPython</strong> to create GUIs for database-driven desktop apps.  Struggling to find
+                a name for your new band?  You can find a Python band name generator in my Portfolio, as well as an app
+                that'll create copies of all your recently-modified files.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- end row -->
     </div>
 
     <div class="row">
-      <div class="col-sm-4"></div>
-      <div class="col-sm-1">
-        <p>HTML/CSS</p>
-        <p>JavaScript</p>
-        <p>Python</p>
-        <p>C#</p>
-      </div>
-      <div class="col-sm-1">
-        <p>MS SQL Server</p>
-        <p>SQLite3</p>
-        <p>MySQL</p>
-      </div>
-      <div class="col-sm-1">
-        <p>GitHub</p>
-        <p>Atom</p>
-        <p>Visual Studio</p>
-        <p>TFS</p>
-      </div>
-      <div class="col-sm-1">
-        <p>.NET</p>
-        <p>Entity Framework</p>
-        <p>Bootstrap</p>
-      </div>
-      <div class="col-sm-4"></div>
-    </div>
+      <div class="col-sm-4">
+        <p class="devicons devicons-dotnet"></p>
+          <!-- Trigger button -->
+        <p><button type="button" class="btn btn-lg btn-default" data-toggle="modal" data-target="#netModal">C# &amp; .NET</button></p>
 
-    <div class="page-header">
-    </div>
+        <!-- Modal -->
+        <div id="netModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
 
-    <!--links-->
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">C# &amp; .NET Skill Summary</h4>
+              </div>
+              <div class="modal-body">
+                <p>I started learning <strong>C#</strong> after getting comfortable with Python, and at first it felt
+                like such a finicky language in comparison.  After spending a few weeks working on a website built
+                with <strong>Microsoft's MVC Framework</strong>, <strong>Visual Studio</strong>,
+                <strong>Entity Framework</strong>, and <strong>SignalR</strong>,
+                written primarily in C#, I gained a newfound understanding and appreciation for the power of the language.
+                You can find code snippets from the website on my GitHub.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
 
-    <div id=portfolio class="container-fluid text-center">
-      <br>
-      <div class="row">
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-tree-conifer"></span>
-          <h4>ABOUT</h4>
-          <a href="#" class="btn btn-info" role="button">find out more</a>
+          </div>
         </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-briefcase"></span>
-          <h4>PORTFOLIO</h4>
-          <a href="#" class="btn btn-info" role="button">view my work</a>
+
+      </div>
+
+      <div class="col-sm-4">
+        <p class="devicons devicons-github_badge"></p>
+          <!-- Trigger button -->
+        <p><button type="button" class="btn btn-lg btn-default" data-toggle="modal" data-target="#vcModal">Version Control</button></p>
+
+        <!-- Modal -->
+        <div id="vcModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Version Control Skill Summary</h4>
+              </div>
+              <div class="modal-body">
+                <p>If you ask me, <strong>Git</strong> is seriously cool technology. I love being able to use
+                  <strong>GitHub</strong> to store my own projects and see what my friends have been creating lately.
+                  For most of my projects, I like to use GitHub's <strong>Atom</strong> editor, <strong>iTerm</strong>, and
+                  <strong> Git command-line tools</strong>.  I've also used <strong>TFS</strong> for projects
+                  in <strong>Visual Studio</strong>.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-envelope"></span>
-          <h4>CONTACT</h4>
-          <a href="#" class="btn btn-info" role="button">send a message</a>
+
+      </div>
+
+      <div class="col-sm-4">
+        <p class="devicons devicons-terminal"></p>
+          <!-- Trigger button -->
+        <p><button type="button" class="btn btn-lg btn-default" data-toggle="modal" data-target="#miscModal">Other &amp; In Progress</button></p>
+
+        <!-- Modal -->
+        <div id="miscModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Other Skills &amp; Skills in Progress</h4>
+              </div>
+              <div class="modal-body">
+                <p>I've always been one of those people that just loves to learn. Before I decided to
+                seriously pursue software development, I used tutorials to teach myself advanced
+                <strong>Excel</strong> skills.  More recently, I've been
+                familiarizing myself with <strong>NodeJS</strong>, as I enjoy writing in JavaScript and am interested
+                in expanding what I can do with it.  I've also taught myself some <strong>Ruby</strong>.  There
+                are always so many awesome new technologies that it feels hard to keep up, but it's certainly
+                never boring!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end skills section -->
+  </div>
+
+  <!-- portfolio section -->
+
+  <div id="portfolio" class="container-fluid">
+    <div class="row">
+
+      <div class = "col-sm-3">
+        <div class = "thumbnail">
+           <img src = "images/books.jpg" alt = "Generic placeholder thumbnail">
+        </div>
+
+        <div class = "caption">
+           <h3>SQL Library</h3>
+           <p>A script to create, populate, and query a fictional town library database.</p>
+
+           <p>
+              <a href = "https://github.com/kaitlynharris/library-sql" class = "btn btn-default" role = "button">
+                 See the Code
+              </a>
+           </p>
+
         </div>
       </div>
+
+      <div class = "col-sm-3">
+        <div class = "thumbnail">
+           <img src = "images/band.jpeg" alt = "Generic placeholder thumbnail">
+        </div>
+
+        <div class = "caption">
+           <h3>Band Names</h3>
+           <p>A Python desktop app that will generate a name for your new hipster band.</p>
+
+           <p>
+              <a href = "https://github.com/kaitlynharris/band-names" class = "btn btn-default" role = "button">
+                 See the Code
+              </a>
+           </p>
+
+        </div>
+      </div>
+
+      <div class = "col-sm-3">
+        <div class = "thumbnail">
+           <img src = "images/wander.jpeg" alt = "Generic placeholder thumbnail">
+        </div>
+
+        <div class = "caption">
+           <h3>Bewander Snippets</h3>
+           <p>A website built in Visual Studio with the MVC and Entity frameworks.</p>
+
+           <p>
+              <a href = "https://github.com/kaitlynharris/bewander-samples" class = "btn btn-default" role = "button">
+                 See the Code
+              </a>
+           </p>
+
+        </div>
+      </div>
+
+      <div class = "col-sm-3">
+        <div class = "thumbnail">
+           <img src = "images/computercode.jpg" alt = "Generic placeholder thumbnail">
+        </div>
+
+        <div class = "caption">
+           <h3>File Copier</h3>
+           <p>Finds recently modified files and copies them to a selected destination folder.</p>
+
+           <p>
+              <a href = "https://github.com/kaitlynharris/move-files" class = "btn btn-default" role = "button">
+                 See the Code
+              </a>
+           </p>
+
+        </div>
+      </div>
+
+      <!-- end row -->
     </div>
+    <!-- end portfolio section -->
+  </div>
 
-    <div id=contact>
+  <!-- contact section -->
+
+  <div id="contact" class="container-fluid text-center">
+    <div class="row">
+
+      <div class="col-sm-6" id="info">
+        <p>Hi!  I'm Kaitlyn.  I'm a software developer living in Portland, OR.</p>
+        <p>
+          When I'm not trying to make computers do what I want them to, I enjoy knitting and hiking.
+          I'm also an avid <a href="#" data-toggle="modal" data-target="#frisbeeModal"> Ultimate Frisbee</a>
+          player.
+        </p>
+
+        <div id="frisbeeModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">My Mixed Team, the Natural Twenties</h4>
+              </div>
+              <div class="modal-body">
+                <img src="images/hanfordhowl.jpg" class="img-rounded" alt="Natural Twenties at Hanford Howl 2015" width="550">
+              </div>
+              <div class="modal-footer">
+                <p>
+                  Natural Twenties at Hanford Howl 2015 as "Mad Max: Fury Road"
+                </p>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <br>
+        <p>
+          <a href="mailto:kaitlynharrispdx@gmail.com">kaitlynharrispdx@gmail.com</a>
+        </p>
+        <br>
+        <p>
+          <a href="https://github.com/kaitlynharris">github.com/kaitlynharris</a>
+        </p>
+
+
+      </div>
+
+      <div class="col-sm-6">
+        <img src="images/me.jpg" class="img-circle" id="profilepic" alt="Kaitlyn" width="300" height="300">
+      </div>
+      <!-- end row -->
     </div>
-
-    <!--footer-->
-
-    <footer class="container-fluid bg-1 text-center">
-      <p>Kaitlyn Harris | Portland, OR | kaitlynharrispdx@gmail.com</p>
-    </footer>
+    <!-- end contact section -->
+  </div>
 
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
   </body>
 </html>
